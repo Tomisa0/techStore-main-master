@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/slider.css" />
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+  <title>Каталог</title>
+</head>
+
+<body>
+  <header class="container">
+    <div><img src="./img/images-logo.png" alt="logotip"></div>
+    <!-- <div class="logo-wrap"><img src="img/logo_dom.svg" alt="logo_dom" /></div> -->
+    <nav>
+      <div class="logo-wrap"><img src="img/logo_dom.svg" alt="logo_dom" /></div>
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="sales.html">Акции</a>
+      <a href="cart.html">Корзина</a>
+    </nav>
+    <div class="button-header">
+      <button class="button_login_in">Войти</button>
+      <button class="button_sign_in">Зарегестрироваться</button>
+    </div>
+  </header>
+  <main>
+
+    <section class="gray-color">
+      <div class="container">
+        <br>
+        <br>
+        <h1>Каталог</h1>
+        <br>
+        <div class="popular_item_wrapper">
+
+          <div class="popular_item">
+            <img src="./png/home-png/Водонагреватель AVA AW-30.png" alt="Водонагреватель AVA AW-30">
+            <p class="price">Цена: <span>44990</span> ₸</p>
+            <p class="product_name">Водонагреватель AVA AW-30</p>
+            <br>
+            <button class="btnModal openModalBtn" onclick="openModal('product2')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/catalog-png/Дрель-шуруповерт Bosch GSR.png"
+              alt="Дрель-шуруповерт Bosch GSR 12V-35 FC Full Set аккумуляторная (06019H3000)" />
+            <p class="price">Цена: <span>152990</span> ₸</p>
+            <p class="product_name">Дрель-шуруповерт Bosch GSR 12V-35 FC Full Set аккумуляторная (06019H3000)</p>
+            <button class="btnModal openModalBtn" onclick="openModal('product3')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/home-png/Кондиционер AVA AFT-60TF.png" alt="Кондиционер AVA AFT-60TF">
+            <p class="price">Цена: <span>849990</span> ₸</p>
+            <p class="product_name">Кондиционер AVA AFT-60TF</p>
+            <br>
+            <button class="btnModal openModalBtn" onclick="openModal('product4')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/sales-png/Мойка высокого давления Karcher.png" alt="Мойка высокого давления Karcher K 2 Classic (1.600-979.0)" />
+            <p class="price">Цена: <span>39990</span> ₸ <s>46990 ₸</s></p>
+            <p class="product_name">
+              Мойка высокого давления Karcher K 2 Classic (1.600-979.0)
+            </p>
+            <button class="btnModal openModalBtn" onclick="openModal('product5')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/catalog-png/Перфоратор аккумуляторный Bosch GBH 180-LI Без акк.png"
+              alt="Перфоратор аккумуляторный Bosch GBH 180-LI Без акк" />
+            <p class="price">Цена: <span>104990</span> ₸</p>
+            <p class="product_name">
+              Перфоратор аккумуляторный Bosch GBH 180-LI Без акк
+            </p>
+            <button class="btnModal openModalBtn" onclick="openModal('product6')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/sales-png/Аккумуляторный Триммер.png" alt="Аккумуляторный Триммер Karcher LTR 18-30 (1.444-311.0) аккумулятор в комплекте" />
+            <p class="price">Цена: <span>91990</span> ₸ <s>114990 ₸</s></p>
+            <p class="product_name">Аккумуляторный Триммер Karcher LTR 18-30 (1.444-311.0) аккумулятор в комплекте</p>
+            <button class="btnModal openModalBtn" onclick="openModal('product7')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/sales-png/Паровая гладильная система Tefal IXEO POWER QT2020E0.png" alt="Паровая гладильная система Tefal IXEO POWER QT2020E0">
+            <p class="price">Цена: <span>299990</span> ₸ <s>339990 ₸</s></p>
+            <p class="product_name">Паровая гладильная система Tefal IXEO POWER QT2020E0</p>
+            <button class="btnModal openModalBtn" onclick="openModal('product8')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/home-png/Стиральная машина Gorenje W1HP60SF.png" alt="Стиральная машина Gorenje W1HP60SF">
+            <p class="price">Цена: <span>144990</span> ₸</p>
+            <p class="product_name">Стиральная машина Gorenje W1HP60SF</p>
+            <br>
+            <button class="btnModal openModalBtn" onclick="openModal('product9')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/catalog-png/Перфоратор SDS-max Bosch GBH 8-45 D (0611265100).png"
+              alt="Перфоратор SDS-max Bosch GBH 8-45 D (0611265100)" />
+            <p class="price">Цена: <span>424190</span> ₸</p>
+            <p class="product_name">Перфоратор SDS-max Bosch GBH 8-45 D (0611265100)</p>
+            <button class="btnModal openModalBtn" onclick="openModal('product10')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/home-png/Стиральная машина LG F-4V5VS0W.png" alt="Стиральная машина LG F-4V5VS0W">
+            <p class="price">Цена: <span>289990</span> ₸</p>
+            <p class="product_name">Стиральная машина LG F-4V5VS0W</p>
+            <br>
+            <button class="btnModal openModalBtn" onclick="openModal('product11')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/sales-png/Встраиваемая посудомоечная машина Bosch SMV-6ECX51E.png" alt="Встраиваемая посудомоечная машина Bosch SMV-6ECX51E">
+            <p class="price">Цена: <span>499990</span> ₸ <s>539000 ₸</s></p>
+            <p class="product_name">Встраиваемая посудомоечная машина Bosch SMV-6ECX51E</p>
+            <button class="btnModal openModalBtn" onclick="openModal('product12')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/catalog-png/Перфоратор SDS-max Bosch GBH 12-52 D (0611266100).png"
+              alt="Перфоратор SDS-max Bosch GBH 12-52 D (0611266100)" />
+            <p class="price">Цена: <span>510090</span> ₸</p>
+            <p class="product_name">Перфоратор SDS-max Bosch GBH 12-52 D (0611266100)</p>
+            <button class="btnModal openModalBtn" onclick="openModal('product13')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/home-png/Холодильник Samsung RB-38T7762SA.png" alt="Холодильник Samsung RB-38T7762SA">
+            <p class="price">Цена: <span>449990</span> ₸</p>
+            <p class="product_name">Холодильник Samsung RB-38T7762SA</p>
+            <br>
+            <button class="btnModal openModalBtn" onclick="openModal('product14')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/catalog-png/Отбойный молоток Bosch GSH 16-30 (0611335100).png"
+              alt="Отбойный молоток Bosch GSH 16-30 (0611335100)" />
+            <p class="price">Цена: <span>651890</span> ₸</p>
+            <p class="product_name">Отбойный молоток Bosch GSH 16-30 (0611335100)</p>
+            <button class="btnModal openModalBtn" onclick="openModal('product15')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/home-png/Кондиционер Samsung AR18BQHQASINER.png" alt="Кондиционер Samsung AR18BQHQASINER">
+            <p class="price">Цена: <span>269990</span> ₸</p>
+            <p class="product_name">Кондиционер Samsung AR18BQHQASINER</p>
+            <br>
+            <button class="btnModal openModalBtn" onclick="openModal('product16')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/catalog-png/Распиловочный стол Bosch GTS 10 XC (0601B30400).png"
+              alt="Распиловочный стол Bosch GTS 10 XC (0601B30400)" />
+            <p class="price">Цена: <span>639390</span> ₸</p>
+            <p class="product_name">Распиловочный стол Bosch GTS 10 XC (0601B30400)</p>
+            <button class="btnModal openModalBtn" onclick="openModal('product17')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/home-png/Утюг Tefal Turbo Pro Anti-Calc+ FV-5697.png"
+              alt="Утюг Tefal Turbo Pro Anti-Calc+ FV-5697">
+            <p class="price">Цена: <span>69990</span> ₸</p>
+            <p class="product_name">Утюг Tefal Turbo Pro Anti-Calc+ FV-5697</p>
+            <br>
+            <button class="btnModal openModalBtn" onclick="openModal('product18')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/catalog-png/Электрическая варочная панель Bosch PKN651FP2E.png" alt="Электрическая варочная панель Bosch PKN651FP2E">
+            <p class="price">Цена: <span>169990</span> ₸</p>
+            <p class="product_name">Электрическая варочная панель Bosch PKN651FP2E</p>
+            <button class="btnModal openModalBtn" onclick="openModal('product19')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/catalog-png/Водонагреватель ARISTON PRO1 R ABS 50 V SLIM.png" alt="Водонагреватель ARISTON PRO1 R ABS 50 V SLIM">
+            <p class="price">Цена: <span>79990</span> ₸</p>
+            <p class="product_name">Водонагреватель ARISTON PRO1 R ABS 50 V SLIM</p>
+            <button class="btnModal openModalBtn" onclick="openModal('product20')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/catalog-png/Циклонный пылесос Samsung VC-C4520S36-XEV.png" alt="Циклонный пылесос Samsung VC-C4520S36/XEV">
+            <p class="price">Цена: <span>39990</span> ₸</p>
+            <p class="product_name">Циклонный пылесос Samsung VC-C4520S36/XEV</p>
+            <button class="btnModal openModalBtn" onclick="openModal('product21')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/sales-png/Холодильник Bosch KGN39XW326.png" alt="Холодильник Bosch KGN39XW326">
+            <p class="price">Цена: <span>354990</span> ₸ <s>449990 ₸</s></p>
+            <p class="product_name">Холодильник Bosch KGN39XW326</p>
+            <button class="btnModal openModalBtn" onclick="openModal('product22')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/home-png/Холодильник Bosch KGN36NL306.png" alt="Холодильник Bosch KGN36NL306">
+            <p class="price">Цена: <span>389990</span> ₸</p>
+            <p class="product_name">Холодильник Bosch KGN36NL306</p>
+            <br>
+            <button class="btnModal openModalBtn" onclick="openModal('product23')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/home-png/Циклонный пылесос Samsung V-C18M21C0VR.png"
+              alt="Циклонный пылесос Samsung V-C18M21C0VR">
+            <p class="price">Цена: <span>61990</span> ₸</p>
+            <p class="product_name">Циклонный пылесос Samsung V-C18M21C0VR</p>
+            <br>
+            <button class="btnModal openModalBtn" onclick="openModal('product24')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/catalog-png/Морозильная камера ларь Gorenje FH15FPW.png" alt="Морозильная камера ларь Gorenje FH15FPW">
+            <p class="price">Цена: <span>129990</span> ₸ <s>189990 ₸</s></p>
+            <p class="product_name">Морозильная камера ларь Gorenje FH15FPW</p>
+            <br>
+            <button class="btnModal openModalBtn" onclick="openModal('product25')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/catalog-png/Электрическая варочная панель Hansa BHC-66206.png" alt="Электрическая варочная панель Hansa BHC-66206">
+            <p class="price">Цена: <span>159990</span> ₸ <s>189990 ₸</s></p>
+            <p class="product_name">Электрическая варочная панель Hansa BHC-66206</p>
+            <button class="btnModal openModalBtn" onclick="openModal('product26')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/home-png/Циркулярная (дисковая) пила.png"
+              alt="Циркулярная (дисковая) пила AVA CS 185/1200 (CS/AVA/185/1200)" />
+            <p class="price">Цена: <span>20000</span> ₸</p>
+            <p class="product_name">Циркулярная (дисковая) пила AVA CS 185/1200 (CS/AVA/185/1200)</p>
+            <button class="btnModal openModalBtn" onclick="openModal('product27')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/catalog-png/Отпариватель для одежды ProStyle Tefal IT-3440.png" alt="Отпариватель для одежды ProStyle Tefal IT-3440">
+            <p class="price">Цена: <span>99990</span> ₸ <s>119990 ₸</s></p>
+            <p class="product_name">Отпариватель для одежды ProStyle Tefal IT-3440</p>
+            <button class="btnModal openModalBtn" onclick="openModal('product28')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/catalog-png/Двухкамерный холодильник Atlant MXM-2835-90.png" alt="Двухкамерный холодильник Atlant MXM-2835-90">
+            <p class="price">Цена: <span>164990</span> ₸</p>
+            <p class="product_name">Двухкамерный холодильник Atlant MXM-2835-90</p>
+            <button class="btnModal openModalBtn" onclick="openModal('product1')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/catalog-png/Утюг Philips GC-4542-40.png" alt="Утюг Philips GC-4542/40">
+            <p class="price">Цена: <span>46990</span> ₸</p>
+            <p class="product_name">Утюг Philips GC-4542/40</p>
+            <br>
+            <button class="btnModal openModalBtn" onclick="openModal('product1')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/catalog-png/Вертикальный пылесос Tefal X-Force Flex 12.60 Animal Auto TY-98A9WO.png" alt="Вертикальный пылесос Tefal X-Force Flex 12.60 Animal Auto TY-98A9WO">
+            <p class="price">Цена: <span>259990</span> ₸</p>
+            <p class="product_name">Вертикальный пылесос Tefal X-Force Flex 12.60 Animal Auto TY-98A9WO</p>
+            <button class="btnModal openModalBtn" onclick="openModal('product1')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/sales-png/Дрель-шуруповерт Makita.png" alt="Дрель-шуруповерт Makita DDF453SYE аккумуляторная 2 акк в комплекте" />
+            <p class="price">Цена: <span>83990</span> ₸ <s>125890 ₸</s></p>
+            <p class="product_name">Дрель-шуруповерт Makita DDF453SYE аккумуляторная 2 акк в комплекте</p>
+            <button class="btnModal openModalBtn" onclick="openModal('product1')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/catalog-png/Пылесос Tefal TW-2971EA.png" alt="Пылесос Tefal TW-2971EA">
+            <p class="price">Цена: <span>69990</span> ₸ <s>84990 ₸</s></p>
+            <p class="product_name">Пылесос Tefal TW-2971EA</p>
+            <br>
+            <button class="btnModal openModalBtn" onclick="openModal('product1')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+          <div class="popular_item">
+            <img src="./png/catalog-png/Встраиваемая микроволновая печь Bosch BFL-554MS0.png" alt="Встраиваемая микроволновая печь Bosch BFL-554MS0">
+            <p class="price">Цена: <span>199990</span> ₸</p>
+            <p class="product_name">Встраиваемая микроволновая печь Bosch BFL-554MS0</p>
+            <button class="btnModal openModalBtn" onclick="openModal('product1')">Подробнее</button>
+            <button class="popular_item__btn btn__blue">В корзину</button>
+          </div>
+
+
+
+
+        </div>
+        <br>
+        <br>
+        <br>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-block">
+
+    <div>
+      <div class="footer_tittle">
+        <h5>Будьте в курсе новостей</h5>
+      </div>
+      <div class="footer_text">
+        <p>Подпишитесть на последние обновления и узнавай те о новинках и специальных предложениях первым</p>
+      </div>
+      <div>
+        <form action="./action.html">
+          <div class="your_email"><label for="mail">Введите адрес электронной почты: </label>
+            <br>
+            <br>
+            <input type="email" name="email" id="mail" placeholder="Email" required />
+            <br>
+            <button class="footer_button" type="submit">Подписаться</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer_tittle">
+        <h5>Интернет-магазин</h5>
+      </div>
+      <div>
+        <ul class="footer-menu">
+          <li><a href="./index.html">Главная</a></li>
+          <br>
+          <li><a href="./catalog.html">Каталог</a></li>
+          <br>
+          <li><a href="./sales.html">Акции</a></li>
+          <br>
+          <li><a href="./cart.html">Корзина</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer_tittle">
+        <h5>Помощь покупателю</h5>
+      </div>
+      <div>
+        <p>
+        <h5>2233</h5>Горячая линия с 08:00 до 00:00</p>
+      </div>
+    </div>
+
+  </footer>
+
+  <br>
+  <br>
+
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="shopping-cart__text">
+      <p><strong>Наименование:</strong></p>
+      <p id="product-name"></p>
+      <p><strong>Характеристика:</strong></p>
+      <div id="product-description"></div>
+    </div>
+  </div>
+</div>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/cart.css" />
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <!-- <link rel="stylesheet" href="css/slider.css" /> -->
+  <title>Корзина</title>
+</head>
+
+<body>
+  <header class="container">
+    <div><img src="./img/images-logo.png" alt="logotip"></div>
+    <!-- <div class="logo-wrap"><img src="img/logo_dom.svg" alt="logo_dom" /></div> -->
+    <nav>
+      <div class="logo-wrap"><img src="img/logo_dom.svg" alt="logo_dom" /></div>
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="sales.html">Акции</a>
+      <a href="cart.html">Корзина</a>
+    </nav>
+    <div class="button-header">
+      <button class="button_login_in">Войти</button>
+      <button class="button_sign_in">Зарегестрироваться</button>
+    </div>
+  </header>
+  <main>
+    <section class="container">
+      <div class="shopping-cart"></div>
+    </section>
+
+    <div class="btn_cart_block"><button class="button_cart">Оплатить</button></div>
+    <br>
+  </main>
+
+  <footer class="footer-block">
+
+    <div>
+      <div class="footer_tittle">
+        <h5>Будьте в курсе новостей</h5>
+      </div>
+      <div class="footer_text">
+        <p>Подпишитесть на последние обновления и узнавай те о новинках и специальных предложениях первым</p>
+      </div>
+      <div>
+        <form action="./action.html">
+          <div class="your_email"><label for="mail">Введите адрес электронной почты: </label>
+            <br>
+            <br>
+            <input type="email" name="email" id="mail" placeholder="Email" required />
+            <br>
+            <button class="footer_button" type="submit">Подписаться</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer_tittle">
+        <h5>Интернет-магазин</h5>
+      </div>
+      <div>
+        <ul class="footer-menu">
+          <li><a href="./index.html">Главная</a></li>
+          <br>
+          <li><a href="./catalog.html">Каталог</a></li>
+          <br>
+          <li><a href="./sales.html">Акции</a></li>
+          <br>
+          <li><a href="./cart.html">Корзина</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer_tittle">
+        <h5>Помощь покупателю</h5>
+      </div>
+      <div>
+        <p>
+        <h5>2233</h5>Горячая линия с 08:00 до 00:00</p>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="./js/cart.js"></script>
+</body>
+
+</html>

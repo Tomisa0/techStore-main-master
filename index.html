@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/slider.css" />
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script> -->
+
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+  <title>ЭлектроМаркет</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="container">
+      <div><img src="./img/images-logo.png" alt="logotip"></div>
+      <!-- <div class="logo-wrap"><img src="img/logo_dom.svg" alt="logo_dom" /></div> -->
+      <nav>
+        <div class="logo-wrap"><img src="img/logo_dom.svg" alt="logo_dom" /></div>
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="sales.html">Акции</a>
+        <a href="cart.html">Корзина</a>
+      </nav>
+      <div class="button-header">
+        <button id="" class="button_login_in">Войти</button>
+        <button class="button_sign_in">Зарегистрироваться</button>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <div id="myCarousel" class="carousel slide shadow" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/1080x460-season.png" alt="" />
+            </div>
+            <div class="carousel-item">
+              <img src="./img/bonus-pay580-4.png" alt="" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/inst-24-1080.png" alt="" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="gray-color">
+
+
+        <div class="container">
+          <br>
+          <br>
+          <h1>Популярные категории</h1>
+          <br>
+          <div class="popular_item_wrapper">
+            <div class="popular_item">
+              <img src="./png/home-png/Дрель-шуруповерт.png" alt="Дрель-шуруповерт AVA AV-PTBS12 12V аккумуляторная" />
+              <p class="price">Цена: <span>16990</span> ₸</p>
+              <p class="product_name">Дрель-шуруповерт AVA AV-PTBS12 12V</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product1')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/home-png/Перфоратор.png" alt="Перфоратор AVA AV-PTAH620 620W" />
+              <p class="price">Цена: <span>22990</span> ₸</p>
+              <p class="product_name">
+                Перфоратор AVA AV-PTAH620 620W
+              </p>
+              <button class="btnModal openModalBtn" onclick="openModal('product2')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/home-png/Дрель.png" alt="Дрель Bosch GSB 570 ударная (06011B70R0)" />
+              <p class="price">Цена: <span>24990</span> ₸</p>
+              <p class="product_name">Дрель Bosch GSB 570 ударная (06011B70R0)</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product3')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/home-png/Зарядное устройство аккумуляторное Bosch.png"
+                alt="Зарядное устройство аккумуляторное Bosch GAL 1880 + 2 акк ProCORE18V 4.0Ah (1600A016GF)" />
+              <p class="price">Цена: <span>138990</span> ₸</p>
+              <p class="product_name">Зарядное устройство аккумуляторное Bosch GAL 1880 + 2 акк ProCORE18V 4.0Ah</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product4')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/home-png/Дрель-шуруповерт Bosch EasyDrill.png"
+                alt="Дрель-шуруповерт Bosch EasyDrill 1200 аккумуляторная 2 акк (06039D3007)" />
+              <p class="price">Цена: <span>45890</span> ₸</p>
+              <p class="product_name"> Дрель-шуруповерт Bosch EasyDrill 1200 аккумуляторная 2 акк (06039D3007)</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product5')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+            
+            <div class="popular_item">
+              <img src="./png/home-png/Циркулярная (дисковая) пила.png"
+                alt="Циркулярная (дисковая) пила AVA CS 185/1200 (CS/AVA/185/1200)" />
+              <p class="price">Цена: <span>20000</span> ₸</p>
+              <p class="product_name">Циркулярная (дисковая) пила AVA CS 185/1200 (CS/AVA/185/1200)</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product6')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/home-png/Утюг AVA SL-2033.png" alt="Утюг AVA SL-2033">
+              <p class="price">Цена: <span>19990</span> ₸</p>
+              <p class="product_name">Утюг AVA SL-2033</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product7')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/home-png/Циклонный пылесос Samsung V-C18M21C0VR.png"
+                alt="Циклонный пылесос Samsung V-C18M21C0VR">
+              <p class="price">Цена: <span>61990</span> ₸</p>
+              <p class="product_name">Циклонный пылесос Samsung V-C18M21C0VR</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product8')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/home-png/Кондиционер Beko BBFDA-120 (+инст).png" alt="Кондиционер Beko BBFDA-120 (+инст)">
+              <p class="price">Цена: <span>179990</span> ₸</p>
+              <p class="product_name">Кондиционер Beko BBFDA-120 (+инст)</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product9')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/home-png/Пылесос LG VK-89309H.png" alt="Пылесос LG VK-89309H">
+              <p class="price">Цена: <span>74990</span> ₸</p>
+              <p class="product_name">Пылесос LG VK-89309H</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product10')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/home-png/Утюг Tefal Turbo Pro Anti-Calc+ FV-5697.png"
+                alt="Утюг Tefal Turbo Pro Anti-Calc+ FV-5697">
+              <p class="price">Цена: <span>69990</span> ₸</p>
+              <p class="product_name">Утюг Tefal Turbo Pro Anti-Calc+ FV-5697</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product11')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/home-png/Холодильник Samsung RB-38T7762SA.png" alt="Холодильник Samsung RB-38T7762SA">
+              <p class="price">Цена: <span>449990</span> ₸</p>
+              <p class="product_name">Холодильник Samsung RB-38T7762SA</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product12')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/home-png/Стиральная машина Gorenje W1HP60SF.png" alt="Стиральная машина Gorenje W1HP60SF">
+              <p class="price">Цена: <span>144990</span> ₸</p>
+              <p class="product_name">Стиральная машина Gorenje W1HP60SF</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product13')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/home-png/Стиральная машина LG F-4V5VS0W.png" alt="Стиральная машина LG F-4V5VS0W">
+              <p class="price">Цена: <span>289990</span> ₸</p>
+              <p class="product_name">Стиральная машина LG F-4V5VS0W</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product14')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/home-png/Водонагреватель AVA AW-30.png" alt="Водонагреватель AVA AW-30">
+              <p class="price">Цена: <span>44990</span> ₸</p>
+              <p class="product_name">Водонагреватель AVA AW-30</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product15')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/home-png/Кондиционер Samsung AR18BQHQASINER.png" alt="Кондиционер Samsung AR18BQHQASINER">
+              <p class="price">Цена: <span>269990</span> ₸</p>
+              <p class="product_name">Кондиционер Samsung AR18BQHQASINER</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product16')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/home-png/Кондиционер AVA AFT-60TF.png" alt="Кондиционер AVA AFT-60TF">
+              <p class="price">Цена: <span>849990</span> ₸</p>
+              <p class="product_name">Кондиционер AVA AFT-60TF</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product17')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/home-png/Холодильник Bosch KGN36NL306.png" alt="Холодильник Bosch KGN36NL306">
+              <p class="price">Цена: <span>389990</span> ₸</p>
+              <p class="product_name">Холодильник Bosch KGN36NL306</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product18')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+
+          </div>
+          <br>
+          <br>
+          <br>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="footer-block">
+
+      <div>
+        <div class="footer_tittle">
+          <h5>Будьте в курсе новостей</h5>
+        </div>
+        <div class="footer_text">
+          <p>Подпишитесть на последние обновления и узнавай те о новинках и специальных предложениях первым</p>
+        </div>
+        <div>
+          <form action="./action.html">
+            <div class="your_email"><label for="mail">Введите адрес электронной почты: </label>
+              <br>
+              <br>
+              <input type="email" name="email" id="mail" placeholder="Email" required />
+              <br>
+              <button class="footer_button" type="submit">Подписаться</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer_tittle">
+          <h5>Интернет-магазин</h5>
+        </div>
+        <div>
+          <ul class="footer-menu">
+            <li><a href="./index.html">Главная</a></li>
+            <br>
+            <li><a href="./catalog.html">Каталог</a></li>
+            <br>
+            <li><a href="./sales.html">Акции</a></li>
+            <br>
+            <li><a href="./cart.html">Корзина</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer_tittle">
+          <h5>Помощь покупателю</h5>
+        </div>
+        <div>
+          <p>
+          <h5>2233</h5>Горячая линия с 08:00 до 00:00</p>
+        </div>
+      </div>
+
+    </footer>
+
+    <br>
+    <br>
+
+ <!-- Кнопки для открытия модального окна с характеристиками -->
+ <!-- <button onclick="openModal('product1')">Открыть модальное окно для товара 1</button> -->
+ <!-- <button onclick="openModal('product2')">Открыть модальное окно для товара 2</button> -->
+
+ <!-- Модальное окно с характеристиками товара -->
+ <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="shopping-cart__text">
+      <p><strong>Наименование:</strong></p>
+      <p id="product-name"></p>
+      <p><strong>Характеристика:</strong></p>
+      <div id="product-description"></div>
+    </div>
+  </div>
+</div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="./js/popup.js"></script>
+</body>
+
+</html>

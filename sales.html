@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Акции</title>
+  </head>
+  <body>
+    <header class="container">
+      <div><img src="./img/images-logo.png" alt="logotip"></div>
+      <!-- <div class="logo-wrap"><img src="img/logo_dom.svg" alt="logo_dom" /></div> -->
+      <nav>
+        <div class="logo-wrap"><img src="img/logo_dom.svg" alt="logo_dom" /></div>
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="sales.html">Акции</a>
+        <a href="cart.html">Корзина</a>
+      </nav>
+  <div class="button-header">
+      <button class="button_login_in">Войти</button>
+      <button class="button_sign_in">Зарегестрироваться</button>
+    </div>
+    </header>
+    <main>
+      <section class="container">
+        <div id="myCarousel" class="carousel slide shadow" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/sales/carusel-2/health-discount-1318.png" alt="" />
+            </div>
+            <div class="carousel-item">
+              <img src="./img/home-and-garden-1318.png" alt="" />
+            </div>
+            <div class="carousel-item">
+              <img src="./img/bonus-pay1318.png" alt="" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="gray-color">
+        <div class="container">
+          <br>
+          <br>
+          <h1>Акции</h1>
+          <br>
+          <div class="popular_item_wrapper">
+
+            <div class="popular_item">
+              <img src="./png/sales-png/Дрель-шуруповерт Makita.png" alt="Дрель-шуруповерт Makita DDF453SYE аккумуляторная 2 акк в комплекте" />
+              <p class="price">Цена: <span>83990</span> ₸ <s>125890 ₸</s></p>
+              <p class="product_name">Дрель-шуруповерт Makita DDF453SYE аккумуляторная 2 акк в комплекте</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product1')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/sales-png/Мойка высокого давления Karcher.png" alt="Мойка высокого давления Karcher K 2 Classic (1.600-979.0)" />
+              <p class="price">Цена: <span>39990</span> ₸ <s>46990 ₸</s></p>
+              <p class="product_name">
+                Мойка высокого давления Karcher K 2 Classic (1.600-979.0)
+              </p>
+              <button class="btnModal openModalBtn" onclick="openModal('product2')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/sales-png/Мойка высокого давления.png" alt="Мойка высокого давления Karcher K 7 Compact (1.447-002.0)" />
+              <p class="price">Цена: <span>269490</span> ₸ <s>316990 ₸</s></p>
+              <p class="product_name">Мойка высокого давления Karcher K 7 Compact (1.447-002.0)</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product3')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/sales-png/Аккумуляторная цепная пила.png" alt="Аккумуляторная цепная пила Karcher CNS 18-30 (1.444-001.0)" />
+              <p class="price">Цена: <span>119990</span> ₸ <s>149990 ₸</s></p>
+              <p class="product_name">Аккумуляторная цепная пила Karcher CNS 18-30 (1.444-001.0)</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product4')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/sales-png/Аккумуляторный Триммер.png" alt="Аккумуляторный Триммер Karcher LTR 18-30 (1.444-311.0) аккумулятор в комплекте" />
+              <p class="price">Цена: <span>91990</span> ₸ <s>114990 ₸</s></p>
+              <p class="product_name">Аккумуляторный Триммер Karcher LTR 18-30 (1.444-311.0) аккумулятор в комплекте</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product5')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="img/sales/Пылесос Philips.png" alt="Philips XB-9185/09" />
+              <p class="price">Цена: <span>129990</span> ₸ <s>249990 ₸</s></p>
+              <p class="product_name">Пылесос Philips XB-9185/09</p>
+              <br>
+              <button class="btnModal openModalBtn" onclick="openModal('product6')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/sales-png/Утюг Braun SI-1009OR.png" alt="Утюг Braun SI-1009OR">
+              <p class="price">Цена: <span>14990</span> ₸ <s>18990 ₸</s></p>
+              <p class="product_name">Утюг Braun SI-1009OR</p>
+              <br>
+              <button class="btnModal openModalBtn" onclick="openModal('product7')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/sales-png/Стиральная машина LG F2J6HSFW.png" alt="Стиральная машина LG F2J6HSFW">
+              <p class="price">Цена: <span>249990</span> ₸ <s>259990 ₸</s></p>
+              <p class="product_name">Стиральная машина LG F2J6HSFW</p>
+              <br>
+              <button class="btnModal openModalBtn" onclick="openModal('product8')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/sales-png/Встраиваемая посудомоечная машина Bosch SMV-6ECX51E.png" alt="Встраиваемая посудомоечная машина Bosch SMV-6ECX51E">
+              <p class="price">Цена: <span>499990</span> ₸ <s>539000 ₸</s></p>
+              <p class="product_name">Встраиваемая посудомоечная машина Bosch SMV-6ECX51E</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product9')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/sales-png/Паровая гладильная система Tefal IXEO POWER QT2020E0.png" alt="Паровая гладильная система Tefal IXEO POWER QT2020E0">
+              <p class="price">Цена: <span>299990</span> ₸ <s>339990 ₸</s></p>
+              <p class="product_name">Паровая гладильная система Tefal IXEO POWER QT2020E0</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product10')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/sales-png/Пылесос Tefal Silence Force Cyclonic TW-7260EA.png" alt="Пылесос Tefal Silence Force Cyclonic TW-7260EA">
+              <p class="price">Цена: <span>139990</span> ₸ <s>164990 ₸</s></p>
+              <p class="product_name">Пылесос Tefal Silence Force Cyclonic TW-7260EA</p>
+              <br>
+              <button class="btnModal openModalBtn" onclick="openModal('product11')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/sales-png/Холодильник Samsung RB-33A32N0EL.png" alt="Холодильник Samsung RB-33A32N0EL">
+              <p class="price">Цена: <span>274990</span> ₸ <s>289990 ₸</s></p>
+              <p class="product_name">Холодильник Samsung RB-33A32N0EL</p>
+              <br>
+              <button class="btnModal openModalBtn" onclick="openModal('product12')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/sales-png/Встраиваемая духовка Hansa BOES-684620.png" alt="Встраиваемая духовка Hansa BOES-684620">
+              <p class="price">Цена: <span>169990</span> ₸ <s>259990 ₸</s></p>
+              <p class="product_name">Встраиваемая духовка Hansa BOES-684620</p>
+              <br>
+              <button class="btnModal openModalBtn" onclick="openModal('product13')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/sales-png/Паровая гладильная система Tefal IXEO QT1510E0.png" alt="Паровая гладильная система Tefal IXEO QT1510E0">
+              <p class="price">Цена: <span>209990</span> ₸ <s>239990 ₸</s></p>
+              <p class="product_name">Паровая гладильная система Tefal IXEO QT1510E0</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product14')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/sales-png/Вытяжка Bosch DFT-63CA60Q.png" alt="Вытяжка Bosch DFT-63CA60Q">
+              <p class="price">Цена: <span>99990</span> ₸ <s>109990 ₸</s></p>
+              <p class="product_name">Вытяжка Bosch DFT-63CA60Q</p>
+              <br>
+              <button class="btnModal openModalBtn" onclick="openModal('product15')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/sales-png/Утюг Vitek VT-1215.png" alt="Утюг Vitek VT-1215">
+              <p class="price">Цена: <span>14990</span> ₸ <s>16990 ₸</s></p>
+              <p class="product_name">Утюг Vitek VT-1215</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product16')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/sales-png/Холодильник Bosch KGN39XW326.png" alt="Холодильник Bosch KGN39XW326">
+              <p class="price">Цена: <span>354990</span> ₸ <s>449990 ₸</s></p>
+              <p class="product_name">Холодильник Bosch KGN39XW326</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product17')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+            <div class="popular_item">
+              <img src="./png/sales-png/Стиральная машина LG F2J3NS2W.png" alt="Стиральная машина LG F2J3NS2W">
+              <p class="price">Цена: <span>175491</span> ₸ <s>209990 ₸</s></p>
+              <p class="product_name">Стиральная машина LG F2J3NS2W</p>
+              <button class="btnModal openModalBtn" onclick="openModal('product18')">Подробнее</button>
+              <button class="popular_item__btn btn__blue">В корзину</button>
+            </div>
+
+
+
+
+          </div>
+          <br>
+          <br>
+          <br>
+        </div>
+      </section>
+      </section>
+    </main>
+
+    <footer class="footer-block">
+
+      <div>
+        <div class="footer_tittle">
+          <h5>Будьте в курсе новостей</h5>
+        </div>
+        <div class="footer_text">
+          <p>Подпишитесть на последние обновления и узнавай те о новинках и специальных предложениях первым</p>
+        </div>
+        <div>
+          <form action="./action.html">
+            <div class="your_email"><label for="mail">Введите адрес электронной почты: </label>
+              <br>
+              <br>
+              <input type="email" name="email" id="mail" placeholder="Email" required />
+              <br>
+              <button class="footer_button" type="submit">Подписаться</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div>
+        <div class="footer_tittle">
+          <h5>Интернет-магазин</h5>
+        </div>
+        <div>
+          <ul class="footer-menu">
+            <li><a href="./index.html">Главная</a></li>
+            <br>
+            <li><a href="./catalog.html">Каталог</a></li>
+            <br>
+            <li><a href="./sales.html">Акции</a></li>
+            <br>
+            <li><a href="./cart.html">Корзина</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <div>
+        <div class="footer_tittle">
+          <h5>Помощь покупателю</h5>
+        </div>
+        <div>
+          <p><h5>2233</h5>Горячая линия с 08:00 до 00:00</p>
+        </div>
+      </div>
+  
+    </footer>
+
+    <br>
+    <br>
+
+ <!-- Кнопки для открытия модального окна с характеристиками -->
+ <!-- <button onclick="openModal('product1')">Открыть модальное окно для товара 1</button> -->
+ <!-- <button onclick="openModal('product2')">Открыть модальное окно для товара 2</button> -->
+
+ <!-- Модальное окно с характеристиками товара -->
+ <div id="modal" class="modal">
+   <div class="modal-content">
+     <span class="close" onclick="closeModal()">&times;</span>
+     <div class="shopping-cart__text">
+       <p><strong>Наименование:</strong></p>
+       <p id="product-name"></p>
+       <p><strong>Характеристика:</strong></p>
+       <div id="product-description"></div>
+     </div>
+   </div>
+ </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="./js/popupSales.js"></script>
+  </body>
+</html>
